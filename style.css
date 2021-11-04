@@ -110,7 +110,7 @@ body {
   margin-bottom: 4rem;
 }
 
-.section header strong {
+.section strong {
   color: var(--base-color);
 }
 
@@ -361,4 +361,45 @@ nav.show div.icon-close {
 .card .title {
   font-size: 1.5rem;
   margin-bottom: .75rem;
+}
+
+/*======= TESTIMONIALS ===============*/
+#testimonials {
+  background: white;
+}
+
+#testimonials blockquote {
+  padding: 2rem;
+  box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.25);
+  border-radius: .4rem;
+}
+
+#testimonials blockquote p {
+  position: relative;
+  text-indent: 1.875rem; /* Indentação (espaço parágrafo)*/
+  margin-bottom: 1.5rem;
+  color: var(--title-color);
+}
+
+#testimonials blockquote p span {
+  font: 700 3rem serif;
+  position: absolute;
+  top: -.5rem;
+  left: -1.875rem;
+  color: var(--base-color-alt);
+}
+
+#testimonials cite {
+  display: flex;
+  align-items: center;
+  font-style: normal;
+  color: var(--text-color);
+}
+
+#testimonials cite img {
+  width: 4rem;
+  height: 4rem;
+  object-fit: cover; /* encaixe cobrindo o espaço */
+  clip-path: circle();
+  margin-right: .5rem;
 }
