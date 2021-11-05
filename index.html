@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OriginSix</title>
 
+    <!-- SWIPER  -->
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+  />
+    
     <!-- ICONS -->
     <link rel="stylesheet" href="assets/fonts/style.css" />
 
@@ -116,52 +122,59 @@
 
       <!-- TESTIMONIALS  -->
       <section class="section" id="testimonials">
-        <div class="container grid">
+        <div class="container">
           <header>
             <h2 class="title">Depoimentos de quem já passou por aqui</h2>
           </header>
 
-          <div class="testimonials">
-            <div class="testimonial">
-              <blockquote>
-                <p>
-                  <span>&ldquo;</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio architecto quam est officiis at! 
-                </p>
-                <cite>
-                  <img src="https://randomuser.me/api/portraits/women/8.jpg" alt="Foto de Wanessa Souza">
-                  Wanessa Souza
-                </cite>
-              </blockquote>
+          <div class="testimonials swiper">
+            <div class="swiper-wrapper">
+
+              <div class="testimonial swiper-slide">
+                <blockquote>
+                  <p>
+                    <span>&ldquo;</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio architecto quam est officiis at! 
+                  </p>
+                  <cite>
+                    <img src="https://randomuser.me/api/portraits/women/8.jpg" alt="Foto de Wanessa Souza">
+                    Wanessa Souza
+                  </cite>
+                </blockquote>
+              </div>
+  
+              <div class="testimonial swiper-slide">
+                <blockquote>
+                  <p>
+                    <span>&ldquo;</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio architecto quam est officiis at! 
+                  </p>
+                  <cite>
+                    <img src="https://randomuser.me/api/portraits/women/94.jpg" alt="Foto de Franciele Venega">
+                    Franciele Venega
+                  </cite>
+                </blockquote>
+              </div>
+  
+              <div class="testimonial swiper-slide">
+                <blockquote>
+                  <p>
+                    <span>&ldquo;</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio architecto quam est officiis at! 
+                  </p>
+                  <cite>
+                    <img src="https://randomuser.me/api/portraits/women/17.jpg" alt="Foto de Valeska Fabris">
+                    Valeska Fabris
+                  </cite>
+                </blockquote>
+              </div>
             </div>
 
-            <div class="testimonial">
-              <blockquote>
-                <p>
-                  <span>&ldquo;</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio architecto quam est officiis at! 
-                </p>
-                <cite>
-                  <img src="https://randomuser.me/api/portraits/women/94.jpg" alt="Foto de Franciele Venega">
-                  Franciele Venega
-                </cite>
-              </blockquote>
-            </div>
-
-            <div class="testimonial">
-              <blockquote>
-                <p>
-                  <span>&ldquo;</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio architecto quam est officiis at! 
-                </p>
-                <cite>
-                  <img src="https://randomuser.me/api/portraits/women/17.jpg" alt="Foto de Valeska Fabris">
-                  Valeska Fabris
-                </cite>
-              </blockquote>
+            <div class="swiper-pagination">
             </div>
         </div>
       </section>
 
       <!-- CONTACT  -->
     </main>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="main.js"></script>  
   </body>
 </html>
