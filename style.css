@@ -483,4 +483,39 @@ footer i {
 
 footer .social a {
   margin-right: 2rem;
+  transition: .3s;
+  display: inline-block;
+}
+
+footer .social a:hover {
+  transform: translateY(-0.3rem);
+}
+
+/*======= BACK TO TOP ===============*/
+
+.back-to-top {
+  background: var(--base-color);
+  position: fixed;
+  color: var(--text-color-light);
+
+  right: 1rem;
+  bottom: 1rem;
+  padding: .8rem;
+
+  clip-path: circle();
+
+  font-size: 1.5rem;
+  line-height: 0;
+
+  visibility: hidden;
+  opacity: 0;
+
+  transition: .3s;
+  transform: translateY(200%);
+}
+
+.back-to-top.show {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
 }
