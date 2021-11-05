@@ -391,6 +391,8 @@ nav.show div.icon-close {
 }
 
 #testimonials blockquote {
+  margin-left: 2rem;
+  margin-right: 2rem;
   padding: 2rem;
   box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.25);
   border-radius: .8rem .8rem 0 0;
@@ -439,6 +441,10 @@ nav.show div.icon-close {
 
 .swiper-pagination-bullet-active {
   background: var(--base-color);
+}
+
+.swiper-button-next, .swiper-button-prev {
+  color: var(--base-color-alt);
 }
 
 /*======= CONTACT ===============*/
@@ -532,8 +538,10 @@ footer .social a:hover {
 }
 
 /* ===== MEDIA QUERIES: Adicionar break points de acordo com o tamanho do dispositivo */
-/* extra-large devices: > 1200 */
+
+/*==================================== extra-large devices: > 1200 */
 @media (min-width: 1200px) {
+
   /* classes reutilizáveis */
   .container {
     max-width: 1120px;
@@ -610,8 +618,8 @@ footer .social a:hover {
   }
 
   .card {
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
   /* TESTIMONIALS */
@@ -620,13 +628,92 @@ footer .social a:hover {
     margin-right: auto;
   }
 
+  /* CONTACT */
+  #contact .container {
+    grid-auto-flow: column;
+    align-items: center;
+  }
+
+  #contact .text {
+    max-width: 25rem;
+  }
+
+  /* FOOTER */
+  footer.section {
+    padding: 3.75rem 0;
+  }
+
+  footer .container {
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  footer .logo {
+    font-size: 2.25rem;
+  }
 }
-/* large devices: > 1023 */
-/* large devices: > 992 */
+
+/*====================================== large devices: > 992 */
 @media (min-width: 992px) {
   :root{
     --title-font-size: 2.25rem;
     --subtitle-font-size: 1.125rem;
   }
+
+  .container {
+    max-width: 880px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  /* MENU */
+  nav.show .menu {
+    height: 50vh;
+    width: 50vw;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 50%;
+    border-radius: 1rem;
+  }
+  
+  nav.show ul.grid{
+    gap: 2rem;
+  }
+
+  nav .menu ul li a.title {
+    font: 700 1rem var(--body-font);
+  }
+
+  /* HOME */
+  #home .container {
+    grid-auto-flow: column;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  #home .image {
+    order: 1;
+  }
+
+  #home .text {
+    order: 0;
+    max-width: 18rem;
+    text-align: left;
+  }
+
+  /* ABOUT */
+  #about .container {
+    margin: 0 auto;
+    grid-auto-flow: column;
+  }
+
+  /* TESTIMONIALS */
+  #testimonials .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
+
 /* medium devices: > 767 */

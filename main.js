@@ -35,8 +35,18 @@ const swiper = new Swiper('.swiper', {
   pagination: {
     el: '.swiper-pagination'
   },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
   mousewheel: true,
   keyboard: true,
+  breakpoints: {
+    992: {
+      slidesPerView: 2,
+      setWrapperSize: true,
+    }
+  }
 });
 
 // SCROLL REVEAL
